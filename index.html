@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lakshman_Resume</title>
+  <link rel="shortcut icon" href="ion.webp" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 2px solid #ddd;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .summary p {
+      font-size: 1.1rem;
+    }
+
+    .profile-img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 10px;
+      border: 3px solid #3498db;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-lists > div {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #3498db;
+      color: #fff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #2c80b4;
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+      font-size: 1.5rem;
+    }
+
+    .icons a {
+      color: #3498db;
+      transition: color 0.3s ease;
+    }
+
+    .icons a:hover {
+      color: #2c3e50;
+    }
+
+    @media screen and (max-width: 600px) {
+      .skills {
+        flex-direction: column;
+      }
+
+      .profile-img {
+        height: 120px;
+        width: 120px;
+      }
+
+      .icons {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">My Portfolio</h1>
+    <hr />
+    <section class="summary">
+      <h3>Summary</h3>
+      <p>I am Lakshman, I have been actively building my skills in areas such as C programming, Python, and web technologies..</p>
+      <img src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2Fk43GMz63_400x400.jpg&c=0" alt="profile icon" class="profile-img" />
+    </section>
+
+    <hr />
+    <section class="skills">
+      <h3>Skills</h3>
+      <div class="skill-lists">
+        <div>
+          <h5>Technical</h5>
+          <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ol>
+        </div>
+        <div>
+          <h5>Non-Technical</h5>
+          <ul>
+            <li>Swimming</li>
+            <li>Dancing</li>
+            <li>Reading</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="education">
+      <h3>Education</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Sl. No</th>
+            <th>Institution</th>
+            <th>Board</th>
+            <th>YOP</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Vignan</td>
+            <td>JNTUK</td>
+            <td>2027</td>
+            <td>87%</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Chaitanya</td>
+            <td>BSEAP</td>
+            <td>2023</td>
+            <td>98%</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>School</td>
+            <td>SSC</td>
+            <td>2021</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+    <section class="contact">
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Enter name" required />
+        <input type="email" placeholder="Enter email" required />
+        <input type="tel" placeholder="Enter phone" required />
+        <textarea placeholder="Enter your message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <hr />
+    <section class="social">
+      <h3>Social Links</h3>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/lakshman-kaja/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-hackerrank"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
